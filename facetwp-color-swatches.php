@@ -47,7 +47,7 @@ class FacetWP_Color_Swatches
                 $img = '';
                 if ( 'image' == $attr->type ) {
                     $img = (int) wvs_get_product_attribute_image( $term );
-                    $img ( 0 < $img ) ? wp_get_attachment_image_url( $img ) : '';
+                    $img = ( 0 < $img ) ? wp_get_attachment_image_url( $img ) : '';
                 }
 
                 $color = ( ! empty( wvs_get_product_attribute_color( $term ) ) ) ? wvs_get_product_attribute_color( $term ) : $result['facet_display_value'];
